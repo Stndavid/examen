@@ -1,0 +1,14 @@
+
+<button (click)="eliminarItem()">Eliminar país</button>
+<h1>{{ itemEliminado }}</h1>
+<h2>{{ mensajeEliminacion }}</h2> <!-- Nuevo mensaje de eliminación -->
+<div *ngFor="let item of lista">
+  <h3>{{ item }}</h3>
+</div>
+
+<div>
+  <h1>NOMBRE: {{ persona.nombre }}</h1>
+  <h1>EDAD: {{ persona.edad }}</h1>
+  <button (click)="cambiarPersona()">Cambiar persona</button>
+  <button (click)="reset()">Resetear</button>
+</div>
